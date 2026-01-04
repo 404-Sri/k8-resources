@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
-  selector:
+  selector: # we keep this selector because it dynamically filter and group objects based on their attached labels.
     project: roboshop
     component: frontend
     environment: dev
